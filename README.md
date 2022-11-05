@@ -15,13 +15,11 @@ Look at the demo project for using this extension.
 This 'Drag and Select TCalendar' is an extension of the work of Yaroslav Brovin. See the complete explaination here: http://yaroslavbrovin.ru/tcalendar_with_highlight_days_based_on_default_tcalendar/
 Also see the video.
 
+![Screenshot dark 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select-dark.png )
 
 ![Screenshot light 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select.png )
 
-![Screenshot dark 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select-dark.png )
-
-
-Screenshots result of drag select operation.  You can change the drag select colours.
+Screenshots: result of drag select operation.  You can change the drag select colours.
 
 ## Special thanks to
 - Remy Lebeau (for the cast hack)
