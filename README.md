@@ -6,6 +6,10 @@ A fast drag select extention to the default fmx TCalendar. No component need to 
 To select a date range in Delphi Firemonkey is perfectly possible and easy to do using two TCalendar controls and thats what I did in one of my commercial applications. However, a client complained that the control in a older application version (Silverlight based) had a drag select and that was easier.
 Easier is King so I created this extension which supports drag select dates.
 
+## Installation
+You only need to add two files to your project FMX.CalendarHolidayDays.Style.pas and FMX.Calendar.Helpers.pas
+Look at the demo project for using this extension.
+
 
 ## Origins
 This 'Drag and Select TCalendar' is an extension of the work of Yaroslav Brovin. See the complete explaination here: http://yaroslavbrovin.ru/tcalendar_with_highlight_days_based_on_default_tcalendar/
