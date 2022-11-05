@@ -3,7 +3,7 @@
 A fast drag select extention to the default fmx TCalendar. No component need to be installed. Just include some files and optional set colours. It should work in most Delphi FMX versions, I tested it in Delphi 11.2.
 
 
-![Screenshot dark 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select-dark.png )
+![Screenshot dark 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select-dark2.png )
 
 ![Screenshot light 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select.png )
 
