@@ -2,7 +2,7 @@
 
 A fast drag select extention to the default fmx TCalendar.
 
-This is an extension of the work of Yaroslav Brovin. See the complete explanaition here: http://yaroslavbrovin.ru/tcalendar_with_highlight_days_based_on_default_tcalendar/
+This is an extension of the work of Yaroslav Brovin. See the complete explaination here: http://yaroslavbrovin.ru/tcalendar_with_highlight_days_based_on_default_tcalendar/
 Also see the video.
 
 
