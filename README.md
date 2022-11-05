@@ -17,7 +17,7 @@ Also see the video.
 ![Screenshot dark 1](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select-dark.png )
 
 
-Screenshots result of drag select operation. 
+Screenshots result of drag select operation.  You can change the drag select colours.
 
 ## Special thanks to
 - Remy Lebeau (for the cast hack)
