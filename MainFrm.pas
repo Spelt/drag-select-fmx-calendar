@@ -28,6 +28,7 @@ type
     procedure BtnDeleteEventsClick(Sender: TObject);
     procedure BtnCheckPresentationNameClick(Sender: TObject);
     procedure btnGetRangeClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     procedure UpdateEvents;
   public
@@ -44,6 +45,14 @@ implementation
 uses
   FMX.Calendar.Helpers,
   System.Rtti;
+
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+  Calendar1.DateTime := Now;
+  DEEvent.DateTime := Now;
+  CBDisplayEvents.IsChecked := true;
+end;
 
 procedure TMainForm.BtnAddEventsClick(Sender: TObject);
 begin

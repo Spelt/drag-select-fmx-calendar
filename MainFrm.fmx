@@ -7,6 +7,7 @@ object MainForm: TMainForm
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnShow = FormShow
   DesignerMasterStyle = 0
   object Layout2: TLayout
     Align = Client
@@ -93,7 +94,6 @@ object MainForm: TMainForm
         Viewport.Height = 392.000000000000000000
       end
       object DEEvent: TDateEdit
-        Date = 42261.000000000000000000
         Position.X = 10.000000000000000000
         Position.Y = 24.000000000000000000
         Size.Width = 87.000000000000000000
