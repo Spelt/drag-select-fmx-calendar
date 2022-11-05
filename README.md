@@ -5,6 +5,6 @@ This is an extension of the work of Yaroslav Brovin. See the complete explanaiti
 Also see the video.
 
 
-![ZXing.Delphi Logo](https://github.com/Spelt/EventCalendar/git-resources/drag-select.png )
+![ZXing.Delphi Logo](https://github.com/Spelt/EventCalendar/blob/master/git-resources/drag-select.png )
 
 Screenshot result of drag select operation. 
