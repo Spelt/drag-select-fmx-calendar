@@ -4,11 +4,15 @@ interface
 
 uses
   System.UITypes, FMX.Calendar, FMX.Calendar.Style, FMX.Controls.Model, FMX.Presentation.Messages, FMX.Controls.Presentation,
-  FMX.ListBox, System.Classes;
+  FMX.ListBox,
+  {$IFDEF DEBUG}
+  {$IFDEF MSWINDOWS}
+  Winapi.Windows,
+  {$ENDIF MSWINDOWS}
+  {$ENDIF}
+  System.Classes;
 
 type
-
-
 
   TStyledCalendarWithHolidayDays = class(TStyledCalendar)
   protected
@@ -209,7 +213,7 @@ end;
 procedure TStyledCalendarWithHolidayDays.CalendarMouseDown(Sender: TObject; Button: TMouseButton;
     Shift: TShiftState; X, Y: Single);
 begin
-  fStartDateSelected := TDayItem(Sender).Date;
+  fStartDateSelected := TDayItem(Sender).Date.GetDate();
   fCurrentDateSelected := fStartDateSelected;
   var arrayTotalDays := TArray<TDateTime>.Create();
   SetLength(arrayTotalDays, 1);
@@ -231,14 +235,20 @@ begin
 
     fCurrentDateSelected := dayItem;
     var dayIncrement := -1;
-    var offSet := 0;
     if fCurrentDateSelected >= fStartDateSelected then
     begin
       dayIncrement := 1;
-      offSet := 1;
     end;
 
-    var totalDays := DaysBetween(fCurrentDateSelected, fStartDateSelected) + 1 + offSet;
+    var totalDays := DaysBetween(fCurrentDateSelected, fStartDateSelected) + 1;
+
+    {$IFDEF DEBUG}
+    {$IFDEF MSWINDOWS}
+    OutputDebugString(PChar(string.format('DaysBetween: %d, Start date: %s, Current date: %s Day item: %s',[totalDays,
+    FormatDateTime('c',fStartDateSelected), FormatDateTime('c',fCurrentDateSelected), FormatDateTime('c',dayItem)])));
+    {$ENDIF MSWINDOWS}
+    {$ENDIF}
+
     var arrayTotalDays := TArray<TDateTime>.Create();
     SetLength(arrayTotalDays, totalDays);
 
